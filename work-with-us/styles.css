@@ -1,0 +1,115 @@
+body{
+}
+
+.banner-bg{
+    background-image: url('./bg.jpg');
+    height: 450px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p{
+    font-family: 'Quicksand', "sans-serif";
+}
+
+h1, h2, h3{
+    font-family: 'Livvic', sans-serif;
+}
+
+ul.finger{
+    list-style-image: url('./finger.png');    
+}
+
+li{
+    color: black;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+li ol li, li ul li {
+    list-style-image: none;    
+}
+
+.main_title{
+    font-family: 'Livvic', sans-serif;
+    font-size:40px;
+    letter-spacing: 7px;
+    word-spacing: 5px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.description1{
+    background-image: url('./shot.png');
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.description2{
+    background-image: url('./hiring.jpg');
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.apply{
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    min-height: 400px;
+}
+.opportunities{
+        padding: 25px;
+    
+}
+.positions{
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+.footer{
+    background-image: linear-gradient(to bottom, #FFFEFF 0%, #D7FFFE 100%);
+}
+.content-writer{
+    background-image: url('./writer2.jpg');
+    height: 250px;
+    width: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.web-dev{
+    background-image: url('./dev.png');
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 768px){
+     .banner-bg{
+        background-image: url('./bg.jpg');
+         height: 250px;
+        background-attachment: fixed;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .description1{
+        background-image: url('./shot.png');
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .description2{
+        background-image: url('./hiring.jpg');
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .opportunities{
+        padding: 0px;
+    }
+    .heading{
+        font-size: 25px;
+    }
+}
