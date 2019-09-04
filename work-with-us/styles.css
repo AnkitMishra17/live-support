@@ -1,8 +1,5 @@
-body{
-}
-
 .banner-bg{
-    background-image: url('./bg.jpg');
+    background-image: url('./public/bg.jpg');
     height: 450px;
     background-attachment: fixed;
     background-size: cover;
@@ -18,7 +15,7 @@ h1, h2, h3{
 }
 
 ul.finger{
-    list-style-image: url('./finger.png');    
+    list-style-image: url('./public/finger.png');    
 }
 
 li{
@@ -41,14 +38,14 @@ li ol li, li ul li {
 }
 
 .description1{
-    background-image: url('./shot.png');
+    background-image: url('./public/shot.png');
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .description2{
-    background-image: url('./hiring.jpg');
+    background-image: url('./public/hiring.jpg');
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -69,7 +66,7 @@ li ol li, li ul li {
     background-image: linear-gradient(to bottom, #FFFEFF 0%, #D7FFFE 100%);
 }
 .content-writer{
-    background-image: url('./writer2.jpg');
+    background-image: url('./public/writer2.jpg');
     height: 250px;
     width: 350px;
     background-size: cover;
@@ -77,7 +74,7 @@ li ol li, li ul li {
 }
 
 .web-dev{
-    background-image: url('./dev.png');
+    background-image: url('./public/dev.png');
     height: 350px;
     width: 350px;
     border-radius: 50%;
@@ -86,7 +83,7 @@ li ol li, li ul li {
 }
 @media only screen and (max-width: 768px){
      .banner-bg{
-        background-image: url('./bg.jpg');
+        background-image: url('./public/bg.jpg');
          height: 250px;
         background-attachment: fixed;
         background-size: contain;
@@ -94,14 +91,14 @@ li ol li, li ul li {
     }
 
     .description1{
-        background-image: url('./shot.png');
+        background-image: url('./public/shot.png');
         height: 250px;
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     .description2{
-        background-image: url('./hiring.jpg');
+        background-image: url('./public/hiring.jpg');
         height: 250px;
         background-size: cover;
         background-repeat: no-repeat;
