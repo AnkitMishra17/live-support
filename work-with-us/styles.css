@@ -40,17 +40,21 @@ li ol li, li ul li {
 .description1{
     background-image: url('./public/shot.png');
     height: 500px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .description2{
     background-image: url('./public/hiring.jpg');
     height: 500px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
-
+.content{
+    font-size: 25px;
+    text-align: justify;
+    word-spacing: 4px;
+}
 .apply{
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     min-height: 400px;
@@ -93,7 +97,7 @@ li ol li, li ul li {
     .description1{
         background-image: url('./public/shot.png');
         height: 250px;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
     }
 
@@ -106,7 +110,26 @@ li ol li, li ul li {
     .opportunities{
         padding: 0px;
     }
+    .content{
+        font-size: 20px;
+        text-align: justify;
+    }
     .heading{
         font-size: 25px;
+    }
+    .content-writer{
+        background-image: url('./public/writer2.jpg');
+        height: 250px;
+        width: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .web-dev{
+        background-image: url('./public/dev.png');
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
