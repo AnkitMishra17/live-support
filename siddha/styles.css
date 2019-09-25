@@ -1,0 +1,136 @@
+.sathi-1{
+    background-image: linear-gradient(120deg, #FFFEFF 0%, #CFF4D2 30%, #78ffd6 26%);
+}
+.sathi-2{
+    background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%, #90F9C4 26%);
+}
+.banner-bg{
+    background-image: url('./meditation.png');
+    height: 500px;
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+p{
+    font-family: 'Quicksand', "sans-serif";
+}
+a{
+    font-size: 20px;
+    font-weight: bold;
+}
+h1, h2, h3, h4{
+    font-family: 'Livvic', sans-serif;
+}
+img{
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+    height: 340px; 
+    width: 340px;
+}
+.image-card{
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+.image-card img {
+    transition: all 0.3s;
+    display: block;
+    height: auto;
+    transform: scale(1);
+}
+.image-card:hover img {
+    transform: scale(1.25);
+}
+.overlay{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'quicksand', sans-serif;
+    font-size: 75px;
+    color: #16c892;
+}
+.overlay-sathi{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'molengo', sans-serif;
+    font-size: 75px;
+}
+.main_title{
+    font-family: 'Livvic', sans-serif;
+    font-size:50px;
+    letter-spacing: 7px;
+    word-spacing: 5px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+li:hover a{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+.footer{
+    background-image: linear-gradient(to bottom, #FFFEFF 0%, #D7FFFE 100%);
+}
+.sidebar{
+        background-image: linear-gradient(75deg,#acb6e5,#86fde8);
+        min-height: 100vh;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        transition: 1s;
+}
+.show{
+        left: 0;
+}
+.btn{
+        background-color: #16c892;
+        text-transform: capitalize;
+        box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+        font-size: 18px;
+        padding: 17px;
+}
+.btn:hover{
+        background-color: #2ecc72;
+}
+.fa-times-circle:hover{
+        font-size: 35px;
+        transition: 0.15s;
+        color:black;
+}
+.fa-bars{
+        color:turquoise;
+}
+.fa-bars:hover{
+        font-size: 50px;
+        transition: 0.25s;
+        color:rgb(69, 121, 115);
+}
+
+@media only screen and (max-width: 768px){
+     .banner-bg{
+        background-image: url('./meditation.png');
+        height: 250px;
+        background-attachment: fixed;
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+     .btn{
+        background-color: #16c892;
+        text-transform: capitalize;
+        font-size: 12px;
+        padding: 9px;
+    }
+    .overlay, .overlay-sathi{
+        font-size: 45px;
+    }
+}
