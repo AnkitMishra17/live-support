@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content=" UPSC, IAS / IPS / IFS / IRS, Civil Services, Civil Servant, CSE, Exam,  Competition, Success, Guidance, Help,  Strategy, Preparation, Aspirants, Prestigious Services, Learning, Opdemy, Union Public Service Commission">
+    	  <meta name="description" content="Opdemy's is India's new age online learning platform for UPSC CSE( IAS exam ) preparation. It provides holistic Civil Services Exam preparation strategy which ensures high rate of success.
+    Every year lakhs of aspirants give UPSC CSE Exam for making a career in prestigious services like IAS, IPS, IFS and IRS. Selection in UPSC is highly competitive. Thus, lot of coachings are charging heavy amout of money from aspirants for giving them basic guidance. But still success rate in UPSC exam is less than 1 percent. Consequently lot of aspirants end up wasting their time and money in seeking guidance from here and there. In order to avoid all that Opdemy has come up with a whole range of success driven courses to help you ace in CSE exam. We aim to help you realize your dream of being civil servant or IAS. ">
+        <title>Siddha | Opdemy | The Open Academy | Online learning platform for UPSC CSE( IAS exam ) preparation</title>    <link rel="icon" href="/images/logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../bootstrap.min.css">
+        <link rel="stylesheet" href="../../siddha/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        p{
+            font-size: 17px;
+            word-spacing: 4px;
+        }
+        h1,h2,h3,h4{
+            text-transform: capitalize;
+        }
+        ul li{
+            list-style-type: none;
+        }
+        @media only screen and (max-width: 768px){
+         .btn{
+            background-color: #16c892;
+            text-transform: capitalize;
+            font-size: 12px;
+            padding: 9px;
+        }
+        }
+    </style>
+           <body>
+             <header class="main_header col-md-12">
+               <nav class="navbar navbar-expand-lg ">
+                 <a class="navbar-brand" href="/"><img src="../images/brand.png" alt="" class="logo" style="width:160px;height:100px;"></a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="fas fa-bars" style="font-size:30px;color:white;"></i>
+               </button>
+
+               <% if(username!='Not Set'){ %>
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav ml-auto" style="margin-top:40px;">
+                   <li class="nav-item">
+                   <a class="nav-link" href="/program/guru_dakshina">Guru Dakshina Courses</a>
+                   </li>
+                   <li class="nav-item">
+     							<a class="nav-link" href="/mcq">Daily MCq's</a>
+     							</li>
+                    <li class="nav-item" >
+               <div class="dropdown" style="margin-right:50px;float:right;">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <%= username %>
+                    </button>
+                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="float:right;margin-right:40px;">
+                     <a class="dropdown-item" href="/user/profile">Profile</a>
+                     <a class="dropdown-item" href="/user_logout">Log Out</a>
+                 </div>
+               </div>
+             </li>
+           </ul>
+          </div>
+
+               <%  }else{   %>
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav ml-auto" style="margin-top:40px;">
+
+                   <li class="nav-item">
+                   <a class="nav-link" href="/program/guru_dakshina">Guru Dakshina Courses</a>
+                   </li>
+                   <li class="nav-item">
+     							<a class="nav-link" href="/mcq">Daily MCq's</a>
+     							</li>
+                    <li class="nav-item">
+                   <a class="nav-link" href="/userLogin">Login</a>
+                   </li>
+                   <li class="nav-item">
+                   <a class="nav-link" href="/userSignup">Sign Up</a>
+                   </li>
+                  </ul>
+                 </div>
+                 <% } %>
+               </nav>
+             </header>
+    <section class="banner-bg">
+        <h1 class="overlay text-center font-weight-light">Siddha</h1>
+    </section>
+
+    <div class="row sathi-2 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+            <div class="col-md-5">
+                <h2 class="text-center">What Is Siddha?</h2>
+
+                <hr class="my-2">
+                <p class="text-primary text-justify my-4 mx-1 font-weight-bold">
+                    'Siddha' refers to the perfect one. One who has achieved a supreme understanding of solving his
+                    problems. The one who can find answers to his questions by constantly making efforts to gain
+                    knowledge. Inspired by this very idea we have designed our course.
+                </p>
+            </div>
+            <div class="col-md-5 d-flex justify-content-center">
+                <div class="image-card d-flex justify-content-center">
+                    <img src="../../siddha/medi.gif" style="width: 400px" alt="">
+                </div>
+            </div>
+    </div>
+    <div class="sathi-1 mt-5 p-2 py-5 ">
+        <div class="row mx-2 mt-3 d-flex justify-content-center">
+                <div class="col-md-5 d-flex justify-content-center">
+                        <div class="image-card d-flex justify-content-center">
+                            <img src="../../siddha/study.png" style="width: 400px" alt="">
+                        </div>
+                </div>
+                <div class="col-md-5 mt-3">
+                        <h2 class="text-center">What can Siddha help with?</h2>
+                        <hr class="my-2">
+                        <p class="text-primary mx-1 p-2 text-justify font-weight-bold">
+                        Our Siddha course covers the entire UPSC CSE Exam Preparation as it brings prelims, mains, and
+                        Interview guidance in one place. No more distractions and no more chaos in choosing different courses.
+                        It is difficult to find Complete guidance of IAS/IPS exam in one place, that too at quite affordable prices.
+                        This is a comprehensive course that enables the student to appear for civil service examination for both
+                        preliminary and mains. It is spread over a duration of 8 months and involving surplus hours of classes.
+                        The students enrolling for this program will be eligible to access both preliminary and mains test series.
+                        </p>
+                </div>
+        </div>
+    </div>
+
+    <div class="sathi-2 mt-5 p-2 py-5 ">
+        <div class="row mx-2 mt-3 d-flex justify-content-center">
+                <div class="col-md-5 d-flex justify-content-center">
+                    <p class="mt-5 text-primary mx-1 p-2 text-justify font-weight-bold" >
+                        This course comprises of the solutions and preparation strategy for UPSC CSE- prelims, mains, and
+                        interviews. Unlike other websites that provide rhetoric and scattered study materials with no guidance,
+                        'Siddha' provides a 24*7 guidance regime with unmatched, precise and concise study materials.
+                    </p>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center">
+                        <ul class="text-primary font-weight-bold mt-4" style="font-size: 17px; word-spacing: 4px;">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>'Siddha' is a one-stop solution created by best in the field educators which brings success at your fingertips.
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>The students enrolling for this program will be eligible to access both preliminary and mains test series.
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>The course includes Yogya (Ethics classes cum test series), Lekhan (Essay guidance cum test series), Vishishta (Optional Subject), Prelims and mains study material (Classes on all GS subjects).
+                            </li>
+                        </ul>
+                </div>
+        </div>
+    </div>
+    <div class="sathi-1 mt-5 p-2 py-5 ">
+        <div class="row mx-2 mt-3 d-flex justify-content-center">
+                <div class="col-md-5 d-flex justify-content-center">
+                        <div class="image-card d-flex justify-content-center">
+                            <img src="../../siddha/success.jpg" style="width: 500px" alt="">
+                        </div>
+                </div>
+                <div class="col-md-5 mt-3 d-flex flex-column justify-content-center">
+                       <h4 class="text-center text-primary font-weight-bold">Some of the benefits of this program are:</h4>
+                            <hr class="my-2 w-75">
+
+                        <ul class="text-primary font-weight-bold mt-4" style="font-size: 17px; word-spacing: 4px;">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Access to online test series for both prelims and mains.
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Access to daily, weekly and monthly news analysis, summary and compilation.
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Relevant online study material based on contemporary issues.
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Access to Institutes group for discussions and additional benefits.
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Unique Essay module with an evaluation of multiple essays submitted by the student.
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>DAF form analysis and assistance for Interview upon clearing mains examination.
+                            </li>
+                        </ul>
+                </div>
+        </div>
+    </div>
+    <section class="aar_video_session" style="width:100%;float:left;">
+
+      <div class="container">
+        <div class="row">
+          <br><br>
+          <div class="col-md-12 text-center my-2">
+            <br><br>
+<img src="../../images/siddha.jpeg" class="w-100 col-sm-4 col-8">
+<br><br>
+<h1>PRELIMS CUM MAINS INTEGRATED PROGRAM</h1>
+<h4>The only course which include essay,ethics and optional guidance</h4>
+<h4>Total Duration: 8 Months</h4>
+</div>
+          <br><br>
+          <div class="col-md-12 cd_review_inner">
+            <div class="row">
+              <div class="col-md-4 cd_reviewimg align-self-center">
+                <br><br>
+                <img src="../images/sessionar1.jpeg" alt="" class="arm_video_img">
+              </div>
+              <div class="col-md-8 cd_review_right">
+                <br><br>
+                <h1 class="card-title">SEPT 15 -DEC 15</h1>
+        <p class="card-text">Optional Ethics Essay,International Relations and Internal Security</p>
+        <p class="card-text">A total 6 hours of classes till December 30,after optional is finished 4-5 hours of classes each day,5 days a week</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 cd_review_inner">
+            <div class="row">
+              <div class="col-md-8 cd_review_right">
+                <br><br>
+                <h1 class="card-title">DEC 16 -FEB 15</h1>
+        <p class="card-text">1.Geography<br>2.Environment<br>3.History</p>
+        <p class="card-text">With classes of geography/environment and history to be held every alternate day.4 hours of classes each day</p>
+
+
+              </div>
+              <div class="col-md-4 cd_reviewimg align-self-center">
+                <br><br>
+                <img src="../images/sessionar2.jpeg" alt="" class="arm_video_img">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 cd_review_inner">
+            <div class="row">
+              <div class="col-md-4 cd_reviewimg align-self-center">
+                <br><br>
+                <img src="../images/sessionar5.jpeg" alt="" class="arm_video_img">
+              </div>
+              <div class="col-md-8 cd_review_right">
+                <br>
+                <br>
+                <h1 class="card-title">FEB 16-APR 15</h1>
+        <p class="card-text">Indian polity and Economics</p>
+        <p class="card-text">Subjects to be covered with 4 hours of clasees every alternate days</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 cd_review_inner">
+            <div class="row">
+              <div class="col-md-8 cd_review_right">
+                <br>
+                <br>
+<h1 class="card-title">APRIL 16-MAY 15</h1>
+        <p class="card-text">1.CSAT<br>2.Science and Tech<br>3.General Science and Other Topics</p>
+
+
+              </div>
+              <div class="col-md-4 cd_reviewimg align-self-center">
+              <br><br>  <img src="../images/ethics.jpeg" alt="" class="arm_video_img">
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          </div>
+          <div class="col-md-12 cd_review_inner">
+            <div class="row">
+
+              <div class="col-md-4 cd_reviewimg align-self-center">
+                <br><br>
+                <img src="../images/landscape.png" alt="" class="arm_video_img">
+              </div>
+              <div class="col-md-8 cd_review_right">
+                <br><br>
+                <h3 style="font-size:40px;font-family: Abril Fatface; font-style: normal; font-variant: normal; font-weight: 100; line-height: 26.4px;">Test Series</h3>
+                <br>
+                <h4>A test series of 3 Tests on each of the 3 GS Papers</h4>
+                <br>
+                <p style="font-size:20px;color:#37a48d;">
+                  This will check all the inputs and give detailed feedback on progress and further improvements required.</p>
+            <!--      <button class="btn" style="margin-bottom:2px;width:200px;height:50px;background:#16c892;color:white;" onclick="enrolla()">Download Schedule</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 cd_review_inner">
+            <div class="row">
+
+              <div class="col-md-8 cd_review_right">
+                <br><br>
+                <h3 style="font-size:40px;font-family: Abril Fatface; font-style: normal; font-variant: normal; font-weight: 100; line-height: 26.4px;">Concluding Session</h3>
+                <br>
+                <h4></h4>
+                <br>
+                <p style="font-size:20px;color:#37a48d;">To be taken by mentors. Giving final Inputs.</p>
+              </div>
+              <div class="col-md-4 cd_reviewimg align-self-center">
+                <br><br>
+                <img src="../images/concluding.jpeg" alt="" class="arm_video_img">
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <section style="float:left;width:100%;">
+      <div class="container">
+        <br>
+        <p style="color:black;font-size:13px;">“Good things almost never come free. Whatever seems free is either low in quality or has hidden costs involved. We at Opdemy, believe in complete transparency. The costs mentioned are necessary to ensure good quality content and yes, no hidden costs involved at Opdemy. Also, the entire course is here, in front of your eyes to see and decide.”</p>
+        <br>
+        <h2>Price: 29,999 INR </h2>
+        <div class="dropdown" style="width:100%;">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:100%;">
+  Select Subject
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width:100%;">
+  <a class="dropdown-item" href="/Enroll?program=siddha(Sociology)">Sociology</a>
+  <a class="dropdown-item" href="/Enroll?program=siddha(Geography)">Geography</a>
+  <a class="dropdown-item" href="/Enroll?program=siddha(Public Administration)">Public Administration</a>
+  <a class="dropdown-item" href="/Enroll?program=siddha(Law)">Law</a>
+  <a class="dropdown-item" href="/Enroll?program=siddha(History)">History</a>
+  <a class="dropdown-item" href="/Enroll?program=siddha(Political Science)">Political Science and International Relations</a>
+  <a class="dropdown-item" href="/Enroll?program=siddha(Without Optional)">Without Optional ( 19,999 INR)</a>
+
+  </div>
+  </div>    <br>
+    </div>
+
+    <div class="container" style="text-align:center;">
+      <br><br><br><br>
+      <h2>Pay by Installment</h2>
+      <h2>Cost: 29,999 + 3000 (10%) = 32,399 INR </h2>
+      <div class="dropdown" style="width:100%;">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:100%;">
+    Select Subject
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width:100%;">
+    <a class="dropdown-item" href="/InsMode?program=siddha(Sociology)">Sociology</a>
+    <a class="dropdown-item" href="/InsMode?program=siddha(Geography)">Geography</a>
+    <a class="dropdown-item" href="/InsMode?program=siddha(Public Administration)">Public Administration</a>
+    <a class="dropdown-item" href="/InsMode?program=siddha(Law)">Law</a>
+    <a class="dropdown-item" href="/InsMode?program=siddha(History)">History</a>
+    <a class="dropdown-item" href="/InsMode?program=siddha(Political Science)">Political Science and International Relations</a>
+    <a class="dropdown-item" href="/InsMode?program=siddha(Without Optional)">Without Optional ( 21,999 INR)</a>
+
+    </div>
+    </div>
+    </div>
+
+    </section>
+
+            <div class="container-fluid footer mt-5">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                        <br><br>
+                    <p class="text-primary font-weight-bold">&copy;Opdemy 2019. All Rights Reserved.</p>
+                  </div>
+                </div>
+            </div>
+
+
+              <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+              <script>
+              function enroll(){
+               // window.alert('Steps to Use Coupon Code\n\nSTEP1: Enter all your Billing Details.\n\nSTEP2: Enter Your Coupon Code.\n\nSTEP3: Click on Apply Code.\n\nSTEP4: Now Pay the Amount');
+                window.location.assign('/Enroll?program=siddha');
+              }
+              function enrolla(){
+                window.location.assign('../../assesment1.pdf');
+              }
+              </script>
+              </body>
+              </html>
