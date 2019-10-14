@@ -81,6 +81,12 @@
         }
         .nav-link:hover{
           background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%, #90F9C4 26%);
+          box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+          color: black;
+        }
+        .nav-link:focus{
+          background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%, #90F9C4 26%);
+          box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
           color: black;
         }
         @media only screen and (max-width: 768px){
@@ -182,10 +188,10 @@
                         </p>
                         <ul class="nav nav-tabs d-flex justify-content-center mt-5">
                             <li class="nav-item">
-                              <a class="nav-link text-primary active" data-toggle="tab" href="#extras">WHAT EXTRAS YOU GET IN THE COURSE</a>
+                              <a class="nav-link text-primary active p-3" data-toggle="tab" href="#extras">WHAT EXTRAS YOU GET IN THE COURSE</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-primary" data-toggle="tab" href="#highlights">OTHER HIGHLIGHTS</a>
+                              <a class="nav-link text-primary p-3" data-toggle="tab" href="#highlights">OTHER HIGHLIGHTS</a>
                             </li>
                         </ul>
                           <div id="myTabContent" class="tab-content">
@@ -212,9 +218,10 @@
         </div>
     </div>
     <div class="sathi-1 p-2 mt-2 mx-2 py-5 ">
-        <div class="row mx-2 mt-3 d-flex justify-content-betweens">
+        <div class="row mx-2 d-flex justify-content-between">
           <div class="col-md-7 d-flex justify-content-center">
             <div id="accordion" class="w-100">
+                <h2 class="text-center my-4">Syllabus and Session List</h2>
                 <button class="btn btn-primary w-100 d-flex justify-content-between" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       Syllabus #1 <span ><i class="fas fa-angle-double-down mx-2 text-light"></i></span>
                 </button>
@@ -253,6 +260,43 @@
                 </div>
           </div>
         </div>
+        <div class="col-md-2 mt-5 d-flex flex-column justify-content-between">
+            <div class="d-flex flex-column justify-content-center">
+              <div class="rounded-circle details">
+                  <span class="value">75</span>
+              </div>
+              <p class="text-primary mt-1 font-weight-bold">Hours of Content</p>
+            </div> 
+            <div class="d-flex flex-column justify-content-center">
+              <div class="rounded-circle details">
+                  <span class="value">40</span>
+              </div>
+              <p class="text-primary mt-1 font-weight-bold">Live Sessions</p>
+            </div> 
+        </div>
+        <div class="col-md-2 mt-5 d-flex flex-column justify-content-between">
+            <div class="d-flex flex-column justify-content-center">
+                <div class="rounded-circle details">
+                    <span class="value">80</span>
+                </div>    
+                <p class="text-primary mt-1 font-weight-bold">Case Study and Projects</p> 
+            </div>
+            <div class="d-flex flex-column justify-content-center">
+            <div class="rounded-circle details">
+                <span class="value">30</span>
+            </div>
+            <p class="text-primary mt-1 font-weight-bold">Tools and Platforms</p>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="sathi-1 p-2 mt-2 mx-2 py-5 ">
+        <div class="row mx-2 mt-3 d-flex justify-content-center">
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                    <h2 class="text-center">The Opdemy Advantage</h2>
+                    <hr class="my-2">   
+                </div>
         </div>
     </div>
             <div class="container-fluid footer mt-5">
