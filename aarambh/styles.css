@@ -90,7 +90,6 @@ li:hover a{
 .btn:hover{
         background-color: #2ecc72;
 }
-
 @media only screen and (max-width: 768px){
      .banner-bg{
         background-image: url('./aarambh.jpg');
