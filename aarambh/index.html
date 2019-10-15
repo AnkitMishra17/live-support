@@ -11,129 +11,47 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha256-wldfwyVJyA71oKe6Sba0fKZkaR6CMwtb0DnWcQs6N1Y=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha256-w49DIDk8itgSjjuoof5lTxYKwcjWJ7Z2sRW3nU1StNA=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="./bootstrap.min.css">
-        <link rel="stylesheet" href="./styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css">
     </head>
-    <style>
-        p{
-            font-size: 17px;
-            word-spacing: 4px;
-        }
-        h1,h2,h3,h4{
-            text-transform: capitalize;
-        }
-        .tab-pane{
-            border-left: 2px solid #16c892;
-        }
-        .list-group{
-            box-shadow: 0 0 20px 0 rgba(72,94,116,0.1);
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .list-group:hover{
-            box-shadow: 0 0 20px 0 rgba(72,94,116,0.4);
-            transition: 0.4s;
-        }
-        .list-group-item:nth-child(odd) {
-          background-image: linear-gradient(63deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
-        }
-        .list-group-item:nth-child(even) {
-          background-image: linear-gradient(120deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
-        }
-        th{
-            font-size: 18px;
-        }
-        a:hover{
-            text-decoration: none;
-        }
-        tr:hover{
-            transform: scale(1.035);
-            background-image: -webkit-linear-gradient(30deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
-            background-image: -o-linear-gradient(30deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
-            background-image: linear-gradient(120deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
-            transition: 0.3s;
-        }
-        .info{
-          position: relative;
-          bottom: 50px;
-          box-shadow: 0 0 20px 0 rgba(72,94,116,0.4);
-          border-radius: 10px;
-          background-image: linear-gradient(63deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
-        }
-        span{
-          color: black;
-          font-weight: bold;
-          font-size: 25px;
-        }
-        .item{
-          border-bottom-style:ridge;
-          border-bottom-color: #16c892;
-        }
-        .item:hover{
-          box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
-          transition: 0.3s;
-        }
-        .nav-link{
-            color: black;
-        }
-        .nav-link:hover{
-          background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%, #90F9C4 26%);
-          box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
-          color: black;
-        }
-        .nav-link:focus{
-          background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%, #90F9C4 26%);
-          box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
-          color: black;
-        }
-        @media only screen and (max-width: 768px){
-         .btn{
-            background-color: #16c892;
-            text-transform: capitalize;
-            font-size: 12px;
-            padding: 9px;
-        }
-        .info{
-          position: relative;
-          top: 50px;
-          bottom: 0px;
-        }
-        }
-    </style>
-           <body>
+<body>
     <section class="banner-bg">         
-        <h1 class="overlay text-center font-weight-light">Aarambh</h1>
+        <h1 class="overlay text-center font-weight-light animated fadeIn">Aarambh</h1>
     </section>
     <div class="row info mx-5 d-flex justify-content-center">
      <div class="col-md-2 item d-flex flex-column text-center" style="border-bottom-left-radius: 10px;">
-        <span class="mt-3">00</span>
-        <p class="text-primary mx-1 font-weight-bold">Days</p>
+        <span class="mt-3 num">82</span>
+        <p class="text-primary mx-1">Days</p>
      </div>
      <div class="col-md-2 item d-flex flex-column text-center">
-        <span class="mt-3">00</span>
-        <p class="text-primary mx-1 font-weight-bold">Classes</p>
+        <span class="mt-3 num">123</span>
+        <p class="text-primary mx-1 ">Classes</p>
      </div>
      <div class="col-md-2 item d-flex flex-column text-center">
-       <span class="mt-3">00</span>
-       <p class="text-primary mx-1 font-weight-bold">Educators</p>
+       <span class="mt-3 num">252</span>
+       <p class="text-primary mx-1 ">Educators</p>
      </div>
      <div class="col-md-2 item d-flex flex-column text-center">
-       <span class="mt-3">00</span>
-       <p class="text-primary  font-weight-bold">Doubt Clearing Session</p>
+       <span class="mt-3 num">35</span>
+       <p class="text-primary ">Doubt Clearing Session</p>
      </div>
      <div class="col-md-2 item d-flex flex-column text-center">
-       <span class="mt-3">00</span>
-       <p class="text-primary  mx-1 font-weight-bold">Personal Guidance</p>
+       <span class="mt-3 num">10</span>
+       <p class="text-primary  mx-1 ">Personal Guidance</p>
     </div>
     <div class="col-md-2 item d-flex flex-column text-center" style="border-bottom-right-radius: 10px;">
-        <span class="mt-3">00</span>
-        <p class="text-primary mx-1 font-weight-bold">Progress Tracking</p>
+        <span class="mt-3 num">50</span>
+        <p class="text-primary mx-1 ">Progress Tracking</p>
     </div>
   </div>
-    <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+    <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center" data-aos="fade-up">
             <div class="col-md-5">
                 <h2 class="text-center">WHY "AARAMBH"?</h2>
                 
@@ -146,7 +64,7 @@
                 </div>
             </div>
     </div>
-    <div class="sathi-11 p-2 mt-2 mx-2 py-5 ">
+    <div class="sathi-11 p-2 mt-2 mx-2 py-5" data-aos="zoom-in">
         <div class="row mx-2 mt-3 d-flex justify-content-center">
                 <div class="col-md-5 d-flex justify-content-center">
                         <div class="image-card animated slideInDown d-flex justify-content-center">
@@ -162,13 +80,8 @@
                 </div>
         </div>
     </div>
-    <div class="sathi-1 p-2 mt-2 mx-2 py-5 ">
+    <div class="sathi-1 p-2 mt-2 mx-2 py-5 " data-aos="zoom-in-up">
         <div class="row mx-2 mt-3 d-flex justify-content-center">
-                <div class="col-md-5 d-flex justify-content-center">
-                        <div class="image-card animated slideInDown d-flex justify-content-center">
-                            <img src="./vis1.jpg" style="width: 400px" alt="">
-                        </div>            
-                </div>
                 <div class="col-md-5 mt-3">
                         <h2 class="text-center">WHAT IS "AARAMBH"?</h2>
                         <hr class="my-2">
@@ -176,22 +89,27 @@
                             "What to start with?" wastes a lot of time and energy, here, keeping in mind the problems aspirant face in the initial days, we have decided to save a lot of time by giving them proper guidance. Our educators have spent their valuable time in designing the best possible plan so if a beginner follows it he/she need not go anywhere for advice. Simply, we put this handcrafted program as the answer to all your questions which can be followed by anyone.
                         </p>
                 </div>
+                <div class="col-md-5 d-flex justify-content-center">
+                        <div class="image-card animated slideInDown d-flex justify-content-center">
+                            <img src="./what.jpg" style="width: 400px" alt="">
+                        </div>            
+                </div>
         </div>
     </div>
     <div class="sathi-11 p-2 mt-2 mx-2 py-5 ">
         <div class="row mx-2 mt-3 d-flex justify-content-center">
-            <div class="col-md-10 mt-3">
+            <div class="col-md-10 mt-3" data-aos="fade-in">
                         <h2 class="text-center">WHEN "AARAMBH"?</h2>
                         <hr class="my-4">
                         <p class="text-primary text-center mx-1 p-2 font-weight-bold" style="font-size: 22px;">
                             Its well said today is better than tomorrow. SO "WHY NOT START TODAY?"
                         </p>
-                        <ul class="nav nav-tabs d-flex justify-content-center mt-5">
+                        <ul class="nav nav-tabs d-flex justify-content-center mt-5 w-100"  style="border-bottom: 3px solid #16c892; background-image: linear-gradient(to top, #92fe9d 0%, #D7FFFE 100%);">
                             <li class="nav-item">
-                              <a class="nav-link text-primary active p-3" data-toggle="tab" href="#extras">WHAT EXTRAS YOU GET IN THE COURSE</a>
+                              <a class="nav-link content text-primary p-3" data-toggle="tab" href="#extras">WHAT EXTRAS YOU GET IN THE COURSE</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-primary p-3" data-toggle="tab" href="#highlights">OTHER HIGHLIGHTS</a>
+                              <a class="nav-link content text-primary p-3" data-toggle="tab" href="#highlights">OTHER HIGHLIGHTS</a>
                             </li>
                         </ul>
                           <div id="myTabContent" class="tab-content">
@@ -218,11 +136,11 @@
         </div>
     </div>
     <div class="sathi-1 p-2 mt-2 mx-2 py-5 ">
-        <div class="row mx-2 d-flex justify-content-between">
+        <div class="row mx-2 d-flex justify-content-between" data-aos="zoom-in">
           <div class="col-md-7 d-flex justify-content-center">
             <div id="accordion" class="w-100">
                 <h2 class="text-center my-4">Syllabus and Session List</h2>
-                <button class="btn btn-primary w-100 d-flex justify-content-between" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="btn btn-primary w-100 d-flex justify-content-between rounded" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       Syllabus #1 <span ><i class="fas fa-angle-double-down mx-2 text-light"></i></span>
                 </button>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
@@ -234,7 +152,7 @@
                       </ul>
                   </div>
                 </div>
-                <button class="btn btn-primary w-100 mt-2 d-flex justify-content-between" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                <button class="btn btn-primary w-100 mt-2 d-flex justify-content-between rounded" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
                     Syllabus #2 <span ><i class="fas fa-angle-double-down mx-2 text-light"></i></span>
                   </button>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
@@ -246,7 +164,7 @@
                       </ul>
                   </div>
                 </div>
-                <button class="btn btn-primary w-100 mt-2 d-flex justify-content-between" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                <button class="btn btn-primary w-100 mt-2 d-flex justify-content-between rounded" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
                     Syllabus #3 <span ><i class="fas fa-angle-double-down mx-2 text-light"></i></span>
                   </button>
                 <div id="collapseThree" class="collapse w-100" aria-labelledby="headingOne" data-parent="#accordion">
@@ -260,42 +178,100 @@
                 </div>
           </div>
         </div>
-        <div class="col-md-2 mt-5 d-flex flex-column justify-content-between">
-            <div class="d-flex flex-column justify-content-center">
+        <div class="col-md-2 mt-5 d-flex flex-column justify-content-center">
+            <div class=" px-5 d-flex flex-column justify-content-center">
               <div class="rounded-circle details">
                   <span class="value">75</span>
               </div>
-              <p class="text-primary mt-1 font-weight-bold">Hours of Content</p>
+              <p class="text-primary mt-2 font-weight-bold">Hours of Content</p>
             </div> 
-            <div class="d-flex flex-column justify-content-center">
+            <div class=" px-5 d-flex flex-column justify-content-center">
               <div class="rounded-circle details">
                   <span class="value">40</span>
               </div>
-              <p class="text-primary mt-1 font-weight-bold">Live Sessions</p>
+              <p class="text-primary mt-2 mx-1 font-weight-bold">Live Sessions</p>
             </div> 
         </div>
-        <div class="col-md-2 mt-5 d-flex flex-column justify-content-between">
-            <div class="d-flex flex-column justify-content-center">
+        <div class="col-md-2 mt-5 d-flex flex-column justify-content-center">
+            <div class=" px-5 d-flex flex-column justify-content-center">
                 <div class="rounded-circle details">
                     <span class="value">80</span>
                 </div>    
-                <p class="text-primary mt-1 font-weight-bold">Case Study and Projects</p> 
+                <p class="text-primary mt-2 font-weight-bold">Case Study and Projects</p> 
             </div>
-            <div class="d-flex flex-column justify-content-center">
+            <div class=" px-5 d-flex flex-column justify-content-center">
             <div class="rounded-circle details">
                 <span class="value">30</span>
             </div>
-            <p class="text-primary mt-1 font-weight-bold">Tools and Platforms</p>
+            <p class="text-primary mt-2 font-weight-bold">Tools and Platforms</p>
         </div>
         </div>
         </div>
         </div>
     </div>
-    <div class="sathi-1 p-2 mt-2 mx-2 py-5 ">
-        <div class="row mx-2 mt-3 d-flex justify-content-center">
-                <div class="col-md-8 d-flex flex-column justify-content-center">
+    <div class="sathi-1 p-2 mt-2 py-5 ">
+        <div class="row mt-3 d-flex justify-content-center" data-aos="fade-down">
+                <div class="col-md-10 d-flex flex-column justify-content-center">
                     <h2 class="text-center">The Opdemy Advantage</h2>
-                    <hr class="my-2">   
+                    <hr class="my-2">
+                    <ul class="nav nav-tabs d-flex justify-content-center mt-5 w-100" style="border-bottom: 3px solid #16c892; background-image: linear-gradient(to top, #92fe9d 0%, #D7FFFE 100%);">
+                        <li class="nav-item">
+                          <a class="nav-link advantage text-primary text-center px-4 py-3" style="border: 0px;" data-toggle="tab" href="#learning">
+                            <img src="./learning.svg" class="icons mx-2" alt=""> Learning Support
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link advantage text-primary text-center px-4 py-3" style="border: 0px;" data-toggle="tab" href="#doubts">
+                            <img src="./problem.svg" class="icons mx-2" alt="">Doubt Resolution
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link advantage text-primary text-center px-4 py-3" style="border: 0px;" data-toggle="tab" href="#networking">
+                            <img src="./teamwork.svg" class="icons mx-2"  alt="">Networking
+                          </a>
+                        </li>
+                    </ul>
+                      <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade active mt-5 show" id="learning">
+                            <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+                                    <div class="col-md-5">
+                                        <p class="text-primary text-justify my-4 mx-1 font-weight-bold">Lorem ipsum dolor sit amet.</p>
+                                        <hr class="my-2">
+                                    </div>
+                                    <div class="col-md-5 d-flex justify-content-center">
+                                        <div class="image-card animated slideInUp d-flex justify-content-center">
+                                            <img src="./study.jpg" style="width: 360px" alt="">
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane mt-5 fade" id="doubts">
+                            <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+                                    <div class="col-md-5">
+                                        <p class="text-primary text-justify my-4 mx-1 font-weight-bold">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                                        <hr class="my-2">
+                                    </div>
+                                    <div class="col-md-5 d-flex justify-content-center">
+                                        <div class="image-card animated slideInUp d-flex justify-content-center">
+                                            <img src="./doubt.jpg" style="width: 360px" alt="">
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane mt-5 fade" id="networking">
+                            <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+                                    <div class="col-md-5">
+                                        <p class="text-primary text-justify my-4 mx-1 font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum.</p>
+                                        <hr class="my-2">
+                                    </div>
+                                    <div class="col-md-5 d-flex justify-content-center">
+                                        <div class="image-card animated slideInUp d-flex justify-content-center">
+                                            <img src="./connecting.jpg" style="width: 360px" alt="">
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                      </div>   
                 </div>
         </div>
     </div>
@@ -306,8 +282,11 @@
                   </div>
                 </div>
             </div>
-
-
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+              $('.num').counterUp({delay:1,time:500});
+              AOS.init({once: true});
+            </script>
               <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
               <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

@@ -50,11 +50,11 @@ img{
 .overlay{
     position: relative;
     top: 50%;
-    left: 50%;
+    left: 25%;
     transform: translate(-50%,-50%);
-    font-family: 'quicksand', sans-serif;
-    font-size: 75px;
-    color: aquamarine;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 90px;
+    color:#2ecc72;
 }
 .overlay-sathi{
     position: relative;
@@ -102,6 +102,106 @@ li:hover a{
     left: 35%;
     transform: translate(-50%,-50%);
 }
+p{
+    font-size: 17px;
+    word-spacing: 4px;
+}
+h1,h2,h3,h4{
+    text-transform: capitalize;
+}
+.tab-pane{
+    border-left: 4px solid #16c892;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.list-group{
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.1);
+    font-size: 16px;
+    font-weight: bold;
+}
+.list-group:hover{
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.4);
+    transition: 0.4s;
+}
+.list-group-item:nth-child(odd) {
+  background-image: linear-gradient(63deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
+}
+.list-group-item:nth-child(even) {
+  background-image: linear-gradient(120deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
+}
+th{
+    font-size: 18px;
+}
+a:hover{
+    text-decoration: none;
+}
+tr:hover{
+    transform: scale(1.035);
+    background-image: -webkit-linear-gradient(30deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
+    background-image: -o-linear-gradient(30deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
+    background-image: linear-gradient(120deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
+    transition: 0.3s;
+}
+.info{
+  position: relative;
+  bottom: 50px;
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.4);
+  border-radius: 10px;
+  background-image: linear-gradient(63deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
+}
+span{
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+.item{
+  border-bottom-style:ridge;
+  border-bottom-color: #16c892;
+}
+.item:hover{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+  transition: 0.3s;
+}
+.nav-link{
+    color: black;
+}
+.nav-item:focus{
+  transition: 0.3s;
+  border-bottom: 4px solid #16c892;
+  border-radius: 4px;
+}
+.content:hover{
+  background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%, #90F9C4 26%);
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+  color: black;
+}
+.content:focus{
+  background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%, #90F9C4 26%);
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+  color: black;
+}
+.advantage{
+  font-size: 25px; 
+}
+.advantage:hover{
+  background-image: linear-gradient(to top, #92fe9d 0%, #D7FFFE 100%);
+  color: black;
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.advantage:focus{
+  background-image: linear-gradient(to top, #92fe9d 0%, #D7FFFE 100%);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+  color: black;
+}
+.icons{
+  height: 48px;
+  width: 48px;
+  border-radius: 0px;
+  box-shadow: none;
+}
 @media only screen and (max-width: 768px){
      .banner-bg{
         background-image: url('./aarambh.jpg');
@@ -117,7 +217,13 @@ li:hover a{
         font-size: 12px;
         padding: 9px;
     }
+   .info{
+     position: relative;
+     top: 50px;
+     bottom: 0px;
+   }
     .overlay, .overlay-sathi{
+        left: 50%;
         font-size: 45px;
     }
 }
