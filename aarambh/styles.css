@@ -8,10 +8,10 @@
     background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%, #90F9C4 26%);
 }
 .banner-bg{
-    background-image: url('./aarambh2.jpg');
+    background-image: url('./aarambh1.jpg');
     height: 600px;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -49,7 +49,7 @@ img{
 }
 .overlay{
     position: relative;
-    top: 50%;
+    top: 40%;
     left: 25%;
     transform: translate(-50%,-50%);
     font-family: 'PT Sans Caption', sans-serif;
@@ -171,12 +171,12 @@ span{
   border-radius: 4px;
 }
 .content:hover{
-  background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%, #90F9C4 26%);
+  background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%);
   box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
   color: black;
 }
 .content:focus{
-  background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%, #90F9C4 26%);
+  background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%);
   box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
   color: black;
 }
@@ -184,14 +184,14 @@ span{
   font-size: 25px; 
 }
 .advantage:hover{
-  background-image: linear-gradient(to top, #92fe9d 0%, #D7FFFE 100%);
+  background-image: linear-gradient(to bottom, #FFFEFF 0%, #D7FFFE 100%);
   color: black;
   box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
   transform: scale(1.05);
   transition: 0.3s;
 }
 .advantage:focus{
-  background-image: linear-gradient(to top, #92fe9d 0%, #D7FFFE 100%);
+  background-image: linear-gradient(to bottom, #FFFEFF 0%, #D7FFFE 100%);
   transform: scale(1.05);
   box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
   color: black;
