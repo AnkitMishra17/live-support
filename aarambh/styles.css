@@ -15,9 +15,6 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-p{
-    font-family: 'Quicksand', "sans-serif";
-}
 a{
     font-size: 20px;
     font-weight: bold;
@@ -55,14 +52,6 @@ img{
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 90px;
     color:#2ecc72;
-}
-.overlay-sathi{
-    position: relative;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-family: 'molengo', sans-serif;
-    font-size: 75px;
 }
 .main_title{
     font-family: 'Livvic', sans-serif;
@@ -103,11 +92,19 @@ li:hover a{
     transform: translate(-50%,-50%);
 }
 p{
+    font-family: 'Quicksand', "sans-serif";
     font-size: 17px;
-    word-spacing: 4px;
+    line-height: 1.65;
+}
+.fontcolor{
+    font-family: 'Quicksand', "sans-serif";
+    color: black;
+    letter-spacing: 1.5px;
+    word-spacing: 6px;
 }
 h1,h2,h3,h4{
     text-transform: capitalize;
+    color: black;
 }
 .tab-pane{
     border-left: 4px solid #16c892;
@@ -149,7 +146,8 @@ tr:hover{
   border-radius: 10px;
   background-image: linear-gradient(63deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
 }
-span{
+span, .content, .advantage{
+  font-family: 'PT Sans Caption', sans-serif;
   color: black;
   font-weight: bold;
   font-size: 25px;
@@ -169,6 +167,9 @@ span{
   transition: 0.3s;
   border-bottom: 4px solid #16c892;
   border-radius: 4px;
+}
+.content, .advantage{
+    font-size: 20px;
 }
 .content:hover{
   background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%);
