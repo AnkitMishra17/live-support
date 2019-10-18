@@ -23,7 +23,7 @@ a{
     font-weight: bold;
 }
 h1, h2, h3, h4{
-    font-family: 'Livvic', sans-serif;
+    font-family: 'PT Sans Caption', sans-serif;
 }
 img{
     border-radius: 10px;
@@ -83,7 +83,7 @@ li:hover a{
 .btn{
         background-color: #16c892;
         text-transform: capitalize;
-        box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+        box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
         font-size: 18px;
         padding: 17px;
 }
