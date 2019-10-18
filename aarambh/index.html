@@ -26,6 +26,9 @@
         background-color: #d5fefd;
         background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);
       }
+      .collapse.show {
+        visibility: visible;
+      }
     </style>
 <body>
     <section class="banner-bg">         
@@ -57,6 +60,7 @@
         <p class="text-primary mx-1 ">Progress Tracking</p>
     </div>
   </div>
+  <div class="py-2">
   <div class="sathi-11 p-2 mt-5 mx-2 py-5 " data-aos="zoom-in-up">
       <div class="row mx-2 mt-3 d-flex justify-content-center">
               <div class="col-md-7 mt-3">
@@ -72,6 +76,7 @@
               </div>
       </div>
   </div>
+</div>
     <div class="sathi-1 row mt-5 mx-2 p-2 py-5 d-flex justify-content-center" data-aos="fade-up">
         <div class="col-md-3 d-flex justify-content-center">
             <div class="image-card animated slideInUp d-flex justify-content-center">
@@ -110,17 +115,17 @@
                         <p class="text-primary text-justify mx-1 p-2 font-weight-bold">
                           "The Secret of getting ahead is getting started". Join today itself to start your preparation journey with us. There is nothing difficult in life provided your desire to succeed is strong enough. It's never too late to start. It is often said "Your attitude at the beginning determines your success and failure". So fasten your belts up and toil hardest to reach your desired destination. One year preparation with determined mindset and correct strategy with lot of hard work is all that is needed.
                         </p>
-                        <ul class="nav nav-tabs d-flex justify-content-center mt-5 w-100"  style="border-bottom: 3px solid #16c892; background-image: linear-gradient(to bottom, #FFFEFF 0%, #D7FFFE 100%);">
-                            <li class="nav-item">
-                              <a class="nav-link content text-primary p-3" data-toggle="tab" href="#extras">WHAT EXTRAS YOU GET IN THE COURSE</a>
+                        <ul class="nav nav-tabs d-flex justify-content-around mt-5"  style="border-bottom: 3px solid #16c892; background-image: linear-gradient(to bottom, #FFFEFF 0%, #D7FFFE 100%);">
+                            <li class="nav-item" >
+                              <a class="nav-link content text-primary py-3" data-toggle="tab" data-target="#extras">WHAT EXTRAS YOU GET IN THE COURSE</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link content text-primary p-3" data-toggle="tab" href="#highlights">OTHER HIGHLIGHTS</a>
+                              <a class="nav-link content text-primary py-3" data-toggle="tab" data-target="#highlights">OTHER HIGHLIGHTS</a>
                             </li>
                         </ul>
                           <div id="myTabContent" class="tab-content">
-                            <div class="tab-pane fade active mt-5 show" id="extras">
-                              <ul class="list-group">
+                            <div class="tab-pane active mt-5 show" id="extras">
+                              <ul class="list-group animated fadeIn ">
                                 <li class="list-group-item text-primary ">	<i class="fas fa-angle-double-right mx-2"></i>A detailed timetable for your preparation.</li>
                                 <li class="list-group-item text-primary ">	<i class="fas fa-angle-double-right mx-2"></i>Dedicated Student Success Mentor.</li>
                                 <li class="list-group-item text-primary ">	<i class="fas fa-angle-double-right mx-2"></i>Personal Guidance.</li>
@@ -130,8 +135,8 @@
                                 <li class="list-group-item text-primary ">	<i class="fas fa-angle-double-right mx-2"></i>A Group of Serious Aspirants like you.</li>
                               </ul>
                             </div>
-                            <div class="tab-pane mt-5 fade" id="highlights">
-                                <ul class="list-group">
+                            <div class="tab-pane mt-5" id="highlights">
+                                <ul class="list-group animated fadeIn ">
                                     <li class="list-group-item text-primary ">	<i class="fas fa-angle-double-right mx-2"></i>Sessions would be 30-40 minutes long.</li>
                                     <li class="list-group-item text-primary ">	<i class="fas fa-angle-double-right mx-2"></i>Students can always message educators on their social media and they will be replied to.</li>
                                     <li class="list-group-item text-primary ">	<i class="fas fa-angle-double-right mx-2"></i>All students are encouraged to ask.</li>
@@ -221,27 +226,27 @@
                     <h1 class="text-center">The Opdemy Advantage</h1>
                     <hr class="my-2">
                     <ul class="nav nav-tabs d-flex justify-content-center mt-5 w-100" style="border-bottom: 3px solid #16c892; background-image: linear-gradient(to bottom, #FFFEFF 0%, #D7FFFE 100%);">
-                        <li class="nav-item">
-                          <a class="nav-link advantage text-primary text-center px-4 py-3" style="border: 0px;" data-toggle="tab" href="#learning">
+                        <li class="nav-item ">
+                          <a class="nav-link active advantage text-primary text-center px-4 py-3 " style="border: 0px;" data-toggle="tab" data-target="#learning">
                             <img src="./learning.svg" class="icons mx-2" alt=""> Learning Support
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link advantage text-primary text-center px-4 py-3" style="border: 0px;" data-toggle="tab" href="#doubts">
+                          <a class="nav-link advantage text-primary text-center px-4 py-3" style="border: 0px;" data-toggle="tab" data-target="#doubts">
                             <img src="./problem.svg" class="icons mx-2" alt="">Doubt Resolution
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link advantage text-primary text-center px-4 py-3" style="border: 0px;" data-toggle="tab" href="#networking">
+                          <a class="nav-link advantage text-primary text-center px-4 py-3" style="border: 0px;" data-toggle="tab" data-target="#networking">
                             <img src="./teamwork.svg" class="icons mx-2"  alt="">Networking
                           </a>
                         </li>
                     </ul>
                       <div id="myTabContent" class="tab-content">
-                        <div class="tab-pane sathi-11 fade active mt-5 show" id="learning">
+                        <div class="tab-pane sathi-11 active mt-5 show" id="learning">
                             <div class="row mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
                                     <div class="col-md-5">
-                                        <p class="text-primary text-justify my-4 mx-1 font-weight-bold">Lorem ipsum dolor sit amet.</p>
+                                        <p class="text-primary animated fadeIn text-justify my-4 mx-1 font-weight-bold">Lorem ipsum dolor sit amet.</p>
                                         <hr class="my-2">
                                     </div>
                                     <div class="col-md-5 d-flex justify-content-center">
@@ -250,10 +255,10 @@
                                     </div>
                             </div>
                         </div>
-                        <div class="tab-pane sathi-11 mt-5 fade" id="doubts">
+                        <div class="tab-pane sathi-11 mt-5 " id="doubts">
                             <div class="row mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
                                     <div class="col-md-5">
-                                        <p class="text-primary text-justify my-4 mx-1 font-weight-bold">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                                        <p class="text-primary animated fadeIn text-justify my-4 mx-1 font-weight-bold">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
                                         <hr class="my-2">
                                     </div>
                                     <div class="col-md-5 d-flex justify-content-center">
@@ -262,10 +267,10 @@
                                     </div>
                             </div>
                         </div>
-                        <div class="tab-pane sathi-11  mt-5 fade" id="networking">
+                        <div class="tab-pane sathi-11  mt-5 " id="networking">
                             <div class="row mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
                                     <div class="col-md-5">
-                                        <p class="text-primary text-justify my-4 mx-1 font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum.</p>
+                                        <p class="text-primary animated fadeIn text-justify my-4 mx-1 font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum.</p>
                                         <hr class="my-2">
                                     </div>
                                     <div class="col-md-5 d-flex justify-content-center">
