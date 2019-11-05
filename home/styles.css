@@ -121,6 +121,40 @@ p{
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 50%);
     transform: skewY(2deg);
 }
+.section-3{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%);
+}
+.section-3:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform-origin: top left;
+    background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%);
+    transform: skewY(-2deg);
+}
+.course-card{
+    border: 2px ridge #7CEC9F;
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+    max-width: 360px;
+}
+.card-header{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(72,94,116,0.2);
+    background: #7CEC9F;
+}
+
 @media only screen and (max-width: 768px){
     .overlay{
         padding: 10px;
@@ -143,7 +177,13 @@ p{
         width: 50px;
     }
     img{
-        height: 275px;
-        width: 275px;
+        height: 250px;
+        width: 250px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .course-card{
+        margin-left: 55px;
+        margin-right: 55px;
     }
 }
