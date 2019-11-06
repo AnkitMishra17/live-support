@@ -198,6 +198,18 @@ p{
         height: 250px;
         width: 250px;
     }
+    .footerfont{
+        font-size: 10px;
+    }
+    .fontcolor{
+        font-family: 'Quicksand', "sans-serif";
+        color: black;
+        letter-spacing: 1.2px;
+        word-spacing: 3px;
+    }
+    p{
+        font-size: 13.5px;
+    }
 }
 @media only screen and (min-width: 768px){
     .course-card{
