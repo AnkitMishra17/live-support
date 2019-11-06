@@ -86,14 +86,14 @@ img{
 }
 p{
     font-family: 'Quicksand', "sans-serif";
-    font-size: 17px;
-    line-height: 1.65;
+    line-height: 1.5;
 }
 .fontcolor{
     font-family: 'Quicksand', "sans-serif";
     color: black;
     letter-spacing: 1.5px;
-    word-spacing: 6px;
+    font-size: 15px;
+    word-spacing: 4px;
 }
 .anchor-down{
     height: 100px;
@@ -168,6 +168,12 @@ p{
     text-shadow: 2px 2px 5px rgba(72,94,116,0.2);
     background: #7CEC9F;
 }
+.educator-img{
+    box-shadow: none;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
 .box{
     border: 3px ridge #7CEC9F;
     border-radius: 10px;
@@ -191,8 +197,7 @@ p{
         bottom: 0px;
     }
    .anchor-down{
-        height: 50px;
-        width: 50px;
+       visibility: hidden;
     }
     img{
         height: 250px;
