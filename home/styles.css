@@ -153,9 +153,9 @@ p{
     border: 2px ridge #7CEC9F;
     border-radius: 10px;
     box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
-    max-width: 360px;
+    max-width: 300px;
 }
-.course-card:hover , .educator-card:hover{
+.course-card:hover , .educator-card:hover, .mentor-card:hover{
     transform: scale(0.95);
     transition: 0.3s ease-in-out;
     box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
@@ -173,6 +173,16 @@ p{
     height: 200px;
     width: 200px;
     border-radius: 50%;
+}
+.mentor-card{
+    border-left: 4px ridge #7CEC9F;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 0 rgba(72,94,116,0.3);
+}
+.mentor-img{
+    box-shadow: none;
+    height: inherit;
+    width: 85%;
 }
 .box{
     border: 3px ridge #7CEC9F;
@@ -192,6 +202,51 @@ p{
 .slick-prev:before, .slick-next:before{
     color:#16c892;
     font-size: 25px;
+  }
+.clip{
+    height: 100%;
+    width: 75%; 
+    background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%, #90F9C4 26%);
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.educator-card:hover .clip{
+    animation: educator-card 4s infinite;
+}
+.mentor-card:hover .clip{
+    animation: mentor-card 4s infinite;
+}
+  
+  @keyframes educator-card {
+    0% {
+      clip-path: circle(0.0% at 50% 50%);
+    }
+    25% {
+      clip-path: circle(40.0% at 50% 50%);
+    }
+    50%{
+        clip-path: circle(50% at 50% 0);
+    }
+    75%{
+        clip-path: circle(50.0% at 50% 100%);
+    }
+    100%{
+        clip-path: circle(0.0% at 50% 50%);
+    }
+  }
+  @keyframes mentor-card {
+    0% {
+        clip-path: circle(25.0% at 0 50%);
+    }
+    50% {
+      clip-path: circle(40.0% at 50% 50%);
+    }
+    100%{
+        clip-path: circle(25.0% at 100% 50%);
+    }
   }
 @media only screen and (max-width: 768px){
     .overlay{
@@ -214,13 +269,14 @@ p{
        visibility: hidden;
     }
     
-.educator-info{
+.educator-info, .mentor-info{
     background: linear-gradient(to bottom, white, #2ed573);
     margin: 15px;
     margin-bottom: 0px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px ;
 }
+
     img{
         height: 250px;
         width: 250px;
@@ -248,10 +304,142 @@ p{
         margin-right: 55px;
     }
     
-.educator-info{
-    background: linear-gradient(to right,  #90F9C4, #D7FFFE, white);
-    overflow: hidden;
-    border-radius: 5px;
-    transform: skewX(-8.5deg);
+    .educator-info, .mentor-info{
+        background: linear-gradient(to right,  #90F9C4, #D7FFFE, white);
+        overflow: hidden;
+        border-radius: 5px;
+        height: 50vh;
+        transform: skewX(-8.5deg);
+    }
 }
+
+.site-footer
+{
+  background-image: linear-gradient(-50deg, #FFFEFF 0%, #55efc4 100%);
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.facebook:hover
+{
+  color:#3b5998
+}
+.twitter:hover
+{
+    color:#00aced
+}
+.instagram:hover
+{
+  color:rgb(228, 64, 95);
+}
+.youtube:hover
+{
+  color:#C4302B;
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
 }
