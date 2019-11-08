@@ -11,40 +11,122 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.css" integrity="sha256-vyrBwUBSk35tCESBicH5psHtafMPaWKVBeFCJjS1T2k=" crossorigin="anonymous" />
         <link rel="stylesheet" href="./bootstrap.min.css">
         <link href="https://kenwheeler.github.io/slick/slick/slick.css" rel="stylesheet"/>
         <link href="https://kenwheeler.github.io/slick/slick/slick-theme.css" rel="stylesheet"/>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles.css">
     </head>
     <style>
-      
       .clip-img{
         position: absolute;
-        clip-path: circle(60% at 0 0);
+        clip-path: circle(50% at 0 0);
         height: 100%;
         width: 100%;
         background-image: linear-gradient(45deg, #2ed573 0,#dfe4ea 100%);
       }
     </style>
-<body>
+<body>  
   <div class="banner-bg">
+          <nav class="mb-2 px-lg-5 py-sm-3 py-lg-1 navbar navbar-expand-md navbar-dark sathi-2">
+              <a class="navbar-brand d-flex align-self-center " href="#"><img src="./logo.png" class="nav-logo logo-mobile" alt=""></a>
+              <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+                aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link text-dark font-weight-bold dropdown-toggle fontcolor" id="dropdownMenu1" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">Courses
+                    </a>
+                    <ul class="dropdown-menu multi-level p-2 sathi-11" role="menu" aria-labelledby="dropdownMenu">
+                        <li class="dropdown-submenu">
+                          <a  class="dropdown-item text-dark font-weight-bold" tabindex="-1" href="#">UPSC CSE Courses: </a>
+                          <ul class="dropdown-menu sathi-1">
+                            <li class="dropdown-item"><a tabindex="-1" class="fontcolor font-weight-bold" style="font-size: 12px;" href="#">Aarambh - UPSC CSE Beginners orientation Program</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-item"><a tabindex="-1" class="fontcolor font-weight-bold" style="font-size: 12px;" href="#">Aadhar - UPSC CSE mains Answer writing cum guidance program </a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-item"><a tabindex="-1" class="fontcolor font-weight-bold" style="font-size: 12px;" href="#">Lekhan - Essay Guidance Program</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-item"><a tabindex="-1" class="fontcolor font-weight-bold" style="font-size: 12px;" href="#">Yogya - Ethics guidance Program </a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-item"><a tabindex="-1" class="fontcolor font-weight-bold" style="font-size: 12px;" href="#">Vishishta - Optional subjects Guidance Program</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-item"><a tabindex="-1" class="fontcolor font-weight-bold" style="font-size: 12px;" href="#">Siddha - UPSC CSE Pre cum Mains Integrated Guidance program</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-submenu">
+                          <a  class="dropdown-item text-dark font-weight-bold" tabindex="-2" href="#">UPPCS Courses: </a>
+                          <ul class="dropdown-menu sathi-1">
+                            <li class="dropdown-item" ><a tabindex="-2" class="fontcolor font-weight-bold" style="font-size: 12px;" href="#">UPPCS Test Series</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-submenu">
+                          <a  class="dropdown-item text-dark font-weight-bold" tabindex="-3" href="#">English Language Courses: </a>
+                          <ul class="dropdown-menu sathi-1">
+                            <li class="dropdown-item"><a tabindex="-3" class="fontcolor font-weight-bold" style="font-size: 12px;" href="#">Daksh</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-submenu ">
+                          <a  class="dropdown-item text-dark font-weight-bold" tabindex="-4" href="#">Social Initiatives : </a>
+                          <ul class="dropdown-menu sathi-1">
+                            <li class="dropdown-item"><a tabindex="-4" class="fontcolor font-weight-bold" style="font-size: 12px;" href="#">Guru Dakshina - Opdemy Scholarship Program</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-item"><a tabindex="-4" class="fontcolor font-weight-bold" style="font-size: 12px;" href="#">Sathi - Opdemy Mental Health Initiative</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                  </li>
+                </ul>
+                
+                <a class="navbar-brand d-flex align-self-center " href="#"><img src="./logo.png" class="nav-logo logo-big-screen" alt=""></a>
+                <ul class="navbar-nav ml-auto">
+                      <li class="nav-item ">
+                        <a class="btn nav-link rounded px-2 fontcolor text-dark font-weight-bold" href="#">Sathi</a>
+                        <hr class="my-sm-1">
+                      </li>
+                      <li class="nav-item">
+                        <a class="btn nav-link rounded px-2 fontcolor text-dark font-weight-bold" href="#">Daily MCQ's</a>
+                        <hr class="my-sm-1">
+                      </li>
+                      <li class="nav-item">
+                        <a class="btn nav-link rounded px-2 fontcolor text-dark font-weight-bold" href="#">Careers</a>
+                        <hr class="my-sm-1">
+                      </li>
+                      <li class="nav-item">
+                        <a class="btn nav-link rounded px-2 fontcolor text-dark font-weight-bold" href="#">Login</a>
+                        <hr class="my-sm-1">
+                      </li>
+                      <li class="nav-item">
+                        <a class="btn nav-link rounded px-2 fontcolor text-dark font-weight-bold" href="#">Sign Up</a>
+                        <hr class="my-sm-1">
+                      </li>
+                </ul>
+              </div>
+            </nav>
       <div class="clip-img">
 
       </div>
-    <div class="row d-flex justify-content-around px-4" style="height: 100vh;">
+    <div class="row d-flex justify-content-around px-4 landing-view" >
       <div class="col-md-5 d-flex flex-column justify-content-center">
         <a href="./https://www.opdemy.com/program/aarambh">
           <img src="./aarambh1.jpg" alt=""style="box-shadow: none;height: auto; width: 95%;">
         </a>
       </div>
-      <div class="col-md-5 d-flex flex-column justify-content-center" >
+      <div class="col-md-5 d-flex flex-column justify-content-center mb-5" >
           <p class="font-weight-bold overlay" style="font-family: 'Raleway', sans-serif; color: #16c892; text-shadow: 2px 2px 5px rgba(72,94,116,0.5);">
             Join the fastest growing E-Learning platform in India
           </p>
-          <div class="d-flex justify-content-inline mt-4">
+          <div class="d-flex justify-content-inline my-4 mb-5">
               <a href="/" class="btn w-50 mx-2 fontcolor" style="border-radius:5px;">For Learners</a>
               <a href="/" class="btn w-50 fontcolor" style="border-radius:5px;">For Educators</a>    
           </div>
@@ -52,11 +134,11 @@
     </div> 
   </div>
   <div class="text-center" style="margin-top: -10vw;">
-      <a href="#second-section">
+      <a data-scroll href="#second-section">
         <img src="./sort-down.png" alt="" class="anchor-down">
       </a>
   </div>
-  <div class="mt-5 p-2" id="second-section">
+  <div class="mt-5 p-2" id="second-section" data-aos="fade-up">
     <div class="mt-5 section-2">
       <h1 class="text-center p-2" style="text-shadow: 2px 2px 5px rgba(72,94,116,0.5);">
           “WHATS SPECIAL ABOUT OPDEMY”
@@ -83,7 +165,7 @@
       </div>
     </div>
   </div>
-  <div class="p-2">
+  <div class="p-2" data-aos="zoom-in-up">
   <div class="mt-5 section-3">
     <div class="slick m-5">
       <div class="card course-card mt-3">
@@ -194,7 +276,7 @@
         </div>
   </div>
 </div>
-<div class="mt-5 section-4">
+<div class="mt-5 section-4" data-aos="fade-up">
     <h1 class="text-center p-2" style="text-shadow: 2px 2px 5px rgba(72,94,116,0.5);">
         COMPLETE PACKAGE FOR CIVIL SERVICES
     </h1>
@@ -219,7 +301,7 @@
     <h1 class="text-center p-2 mt-5" style="text-shadow: 2px 2px 5px rgba(72,94,116,0.5);">
         COMPLETE PACKAGE FOR OPTIONAL SUBJECT
     </h1>
-    <div class="row mt-5 p-2 d-flex justify-content-center box sathi-11">
+    <div class="row mt-5 p-2 d-flex justify-content-center box sathi-11" data-aos="flip-down">
       <div class="col-md-4 mt-5 d-flex  justify-content-center ">
         <img src="./vashistha.jpeg" class="d-flex align-self-center" alt="success">
       </div>
@@ -242,7 +324,7 @@
           <a href="#" class="card-link fontcolor btn m-4 w-50" style="padding: 11px; border-radius: 5px;">Enroll Now</a>
       </div>
     </div>
-    <div class="p-2">
+    <div class="p-2" data-aos="zoom-in-up">
         <div class="mt-5 ">
           <div class="mentor-tab mx-4">
             <div class="card mentor-card d-flex align-content-inline mt-3">
@@ -375,7 +457,7 @@
     <h1 class="text-center p-2 mt-5" style="text-shadow: 2px 2px 5px rgba(72,94,116,0.5); text-transform: uppercase;">
         Our Social Initiative
     </h1>
-    <div class="row mt-5 p-2 d-flex justify-content-center box sathi-1">
+    <div class="row mt-5 p-2 d-flex justify-content-center box sathi-1" data-aos="fade-up">
         <div class="col-md-4 mt-5 d-flex  justify-content-center ">
           <img src="./guru1.jpeg" class="d-flex align-self-center rounded-circle" alt="success">
         </div>
@@ -406,7 +488,7 @@
         </div>
     </div>
 </div>
-<div class="p-2">
+<div class="p-2" data-aos="zoom-in-up">
     <div class="mt-5 ">
       <div class="educator-tab mx-4">
         <div class="card educator-card d-flex align-content-inline mt-3">
@@ -580,70 +662,99 @@
           </div>
     </div>
   </div>
+
+<footer class="page-footer font-small blue-grey lighten-5">
+
+    <div style="background-color: #21d192; border: 2px ridge #2ed573; border-radius: 5px;">
+      <div class="container">
   
-  <div class="container-fluid mt-5">
-      <hr class="my-1">
-    <div class="footer">  <!-- Site footer -->
-      <footer class="site-footer">
-        <div class="container">
-          <div class="row  d-flex justify-content-between">
-            <div class="col-sm-12 col-md-5 d-flex flex-column justify-content-center">
-              <h3 class="fontfooter font-weight-bold text-center">About Opdemy.</h3>  
-              <p class="fontcolor special-content font-weight-bold mt-3 p-2 text-justify">
-                Opdemy is India’s Leading Open Learning and Training platform for UPSC IAS & State PCS examinations. We strive to bridge the gap between Education and Affordability.
-              </p>
-            </div>
-  
-            <div class="col-xs-6 col-md-4 d-flex flex-column justify-content-center">
-              <img src="./logo.png" alt="" class="d-flex align-self-center my-3" style="width: 160px; height: 100px; box-shadow: none;">
-              <hr class="my-3 w-100">
-              <h3 class="fontfooter text-center font-weight-bold" style="text-transform: uppercase;">Connect With Us.</h3>
-              <a href="#" class="fontcolor text-center mt-4"><h5><i class="fas fa-envelope-open-text"></i> support@opdemy.com</h5></a>
-            </div>
-  
-            <div class="col-xs-6 col-md-3  d-flex flex-column justify-content-center">
-              <h3>Quick Links</h3>
-              <hr class="my-3 w-100">
-              <ul class="footer-links ">
-                <li><a href="#" class="footerfont font-weight-bold m-1" style="color: black;">Home</a></li>
-                <li><a href="#" class="footerfont font-weight-bold m-1" style="color: black;">About Us</a></li>
-                <li><a href="#" class="footerfont font-weight-bold m-1" style="color: black;">Contact Us</a></li>
-                <li><a href="#" class="footerfont font-weight-bold m-1" style="color: black;">Privacy & Policy</a></li>
-                <li><a href="#" class="footerfont font-weight-bold m-1" style="color: black;">Terms & Condition</a></li>
-                <li><a href="#" class="footerfont font-weight-bold m-1" style="color: black;">Careers</a></li>
-              </ul>
-            </div>
+        <div class="row py-3 d-flex align-items-center">
+
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-3 mb-md-0">
+            <h6 class="mb-0 fontcolor">Get connected with us on social networks!</h6>
           </div>
-          <hr>
-        </div>
-        <div class="container">
-          <div class="row d-flex justify-content-center mb-3">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text fontcolor font-weight-bold">Copyright &copy; Opdemy 2019. All Rights Reserved.
-              </p>
-            </div>
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
   
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="social-icons d-flex justify-content-inline align-self-center">
-                    <a href="#" class="facebook footerfont mx-3"><i class="fab fa-facebook  fa-3x"></i></a>
-                    <a href="#" class="instagram footerfont mx-3"><i class="fab fa-instagram fa-3x"></i></a>
-                    <a href="#" class="twitter footerfont mx-3"> <i class="fab fa-twitter fa-3x"></i></a>
-                    <a href="#" class="youtube footerfont mx-3"><i class="fab fa-youtube fa-3x"></i></a>
-                </div>
-            </div>
+            <a href="#" class="facebook footerfont mx-3"><i class="fab fa-facebook  fa-3x"></i></a>  
+            <a href="#" class="twitter footerfont mx-3"> <i class="fab fa-twitter fa-3x"></i></a>
+            <a href="#" class="youtube footerfont mx-3"><i class="fab fa-youtube fa-3x"></i></a>
+            <a href="#" class="instagram footerfont mx-3"><i class="fab fa-instagram fa-3x"></i></a>
+  
           </div>
         </div>
+      </div>
+    </div>
+  
+    <div class="container text-center text-md-left mt-5">
+  
+      <div class="row mt-3 dark-grey-text">
+  
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+  
+          <h5 class="text-uppercase font-weight-bold">About Opdemy</h5>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p class="special-content font-weight-bold">
+              Opdemy is India’s Leading Open Learning and Training platform for UPSC IAS & State PCS examinations. We strive to bridge the gap between Education and Affordability.
+            </p>
+  
+        </div>
+        <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <h5 class="text-uppercase font-weight-bold">Useful links</h5>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="dark-grey-text footerfont" href="#!">Home</a>
+          </p>
+          <p>
+            <a class="dark-grey-text footerfont" href="#!">About Us</a>
+          </p>
+          <p>
+            <a class="dark-grey-text footerfont" href="#!">Contact Us</a>
+          </p>
+          <p>
+            <a class="dark-grey-text footerfont" href="#!">Privacy & Policy</a>
+          </p>
+          <p>
+            <a class="dark-grey-text footerfont" href="#!">Terms & Condition</a>
+          </p>
+          <p>
+            <a class="dark-grey-text footerfont" href="#!">Careers</a>
+          </p>
+  
+        </div>
+        <div class="col-md-4 col-lg-5 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+          <h5 class="text-uppercase font-weight-bold">CONNECT WITH US.</h5>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <img src="./logo.png" alt="" class="d-flex align-self-center mb-3" style="width: 200px; height: 100px; box-shadow: none;">
+          <a href="#" class="fontcolor text-center mt-3">
+            <h5>
+              <i class="fas fa-envelope-open-text my-3"></i>
+              support@opdemy.com
+            </h5>
+          </a>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+    <div class="footer-copyright text-center text-black-50 py-3">
+      <h5 class="font-weight-bold fontcolor" style="color: black;"> Copyright &copy; : Opdemy 2019. All Rights Reserved.</h5>
+    </div>
   </footer>
-  </div>
-  </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.js" integrity="sha256-iq9kc2O6o4Nk+H29kgfEmJ8hkeaiiusmGaDTxOK31kI=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script> 
     <script>
       AOS.init({once: true});
+      var scroll = new SmoothScroll('a[href*="#"]',{
+        speed: 750
+      });
       $('.slick').slick({
         centerPadding: '75px',
         slidesToShow: 3,
