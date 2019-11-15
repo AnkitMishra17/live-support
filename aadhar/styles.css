@@ -1,0 +1,233 @@
+.sathi-1{
+    background-image: linear-gradient(120deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
+}
+.sathi-11{
+    background-image: linear-gradient(60deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
+}
+.sathi-2{
+    background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%, #90F9C4 26%);
+}
+.banner-bg{
+    background-image: url('./aadhar.jpg');
+    height: 600px;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+a{
+    font-size: 20px;
+    font-weight: bold;
+}
+h1, h2, h3, h4{
+    font-family: 'PT Sans Caption', sans-serif;
+}
+img{
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+    height: 340px; 
+    width: 340px;
+}
+.image-card{
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+.image-card img {
+    transition: all 0.3s;
+    display: block;
+    height: auto;
+    transform: scale(1);
+}
+.image-card:hover img {
+    transform: scale(1.25);
+}
+.overlay{
+    position: relative;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 90px;
+    color:#2ecc72;
+}
+.main_title{
+    font-family: 'Livvic', sans-serif;
+    font-size:50px;
+    letter-spacing: 7px;
+    word-spacing: 5px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+li:hover a{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+.footer{
+    background-image: linear-gradient(to bottom, #FFFEFF 0%, #D7FFFE 100%);
+}
+.btn{
+        background-color: #16c892;
+        text-transform: capitalize;
+        box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+        font-size: 18px;
+        padding: 17px;
+}
+.btn:hover{
+        background-color: #2ecc72;
+}
+.details{
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(#FFFEFF 0%, #D7FFFE 50%, #90F9C4 100%);
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+}
+.value{
+    position: relative;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+}
+p{
+    font-family: 'Quicksand', "sans-serif";
+    font-size: 16px;
+    line-height: 1.45;
+}
+.fontcolor{
+    font-family: 'Quicksand', "sans-serif";
+    color: black;
+    letter-spacing: 1.3px;
+    word-spacing: 4.5px;
+}
+h1,h2,h3,h4{
+    text-transform: capitalize;
+    color: black;
+}
+.tab-pane{
+    border-left: 4px solid #16c892;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.list-group{
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.1);
+    font-size: 16px;
+    font-weight: bold;
+}
+.list-group:hover{
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.4);
+    transition: 0.4s;
+}
+.list-group-item:nth-child(odd) {
+  background-image: linear-gradient(63deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
+}
+.list-group-item:nth-child(even) {
+  background-image: linear-gradient(120deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
+}
+th{
+    font-size: 18px;
+}
+a:hover{
+    text-decoration: none;
+}
+tr:hover{
+    transform: scale(1.035);
+    background-image: -webkit-linear-gradient(30deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
+    background-image: -o-linear-gradient(30deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
+    background-image: linear-gradient(120deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
+    transition: 0.3s;
+}
+.info{
+  position: relative;
+  bottom: 50px;
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.4);
+  border-radius: 10px;
+  background-image: linear-gradient(63deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
+}
+span, .content, .advantage{
+  font-family: 'PT Sans Caption', sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+.item{
+  border-bottom-style:ridge;
+  border-bottom-color: #16c892;
+}
+.item:hover{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+  transition: 0.3s;
+}
+.nav-link{
+    color: black;
+}
+.nav-item:focus{
+  transition: 0.3s;
+  border-bottom: 4px solid #16c892;
+  border-radius: 4px;
+}
+.content, .advantage{
+    font-size: 20px;
+}
+.content:hover{
+  background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%);
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+  color: black;
+}
+.content:focus{
+  background-image: linear-gradient(65deg, #FFFEFF 0%, #D7FFFE 30%);
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+  color: black;
+}
+.advantage{
+  font-size: 25px; 
+}
+.advantage:hover{
+  background-image: linear-gradient(to bottom, #FFFEFF 0%, #D7FFFE 100%);
+  color: black;
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.advantage:focus{
+  background-image: linear-gradient(to bottom, #FFFEFF 0%, #D7FFFE 100%);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
+  color: black;
+}
+.icons{
+  height: 48px;
+  width: 48px;
+  border-radius: 0px;
+  box-shadow: none;
+}
+@media only screen and (max-width: 768px){
+    p,li{
+        font-size: 14px;
+    }
+     .banner-bg{
+        background-image: url('./aadhar.jpg');
+        height: 250px;
+        background-attachment: fixed;
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+     .btn{
+        background-color: #16c892;
+        text-transform: capitalize;
+        font-size: 12px;
+        padding: 9px;
+    }
+   .info{
+     position: relative;
+     top: 50px;
+     bottom: 0px;
+   }
+    .overlay, .overlay-sathi{
+        left: 50%;
+        font-size: 45px;
+    }
+}
