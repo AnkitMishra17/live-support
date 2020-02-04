@@ -60,7 +60,6 @@ img{
     text-transform: uppercase;
 }
 li:hover a{
-    background-color: black;
     color: white;
     transition: 0.3s;
 }
@@ -72,7 +71,7 @@ li:hover a{
         text-transform: capitalize;
         box-shadow: 0 0 20px 0 rgba(72,94,116,0.3);
         font-size: 18px;
-        padding: 17px;
+        padding: 13px;
 }
 .btn:hover{
         background-color: #2ecc72;
@@ -93,6 +92,11 @@ p{
     font-family: 'Quicksand', "sans-serif";
     font-size: 16px;
     line-height: 1.45;
+}
+.quote-icon{
+    height: 30px;
+    width: 30px;
+    box-shadow: none;
 }
 .fontcolor{
     font-family: 'Quicksand', "sans-serif";
@@ -129,10 +133,10 @@ h1,h2,h3,h4{
   background-image: linear-gradient(63deg, #FFFEFF 0%, #D7FFFE 75%, #FFFEFF 25%);
 }
 span{
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'poppins', sans-serif;
   color: #16c892;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 17px;
 }
 .item{
   border-bottom-style:ridge;
@@ -162,10 +166,26 @@ span{
     box-shadow: none;
 }
 .questions-svg{
-    height: 320px;
-    width: 320px;
+    height: 400px;
+    width: 400px;
     box-shadow: none;
     align-self: center;
+}
+.start{
+    background: #1dd1a1;
+    border-radius: 13px;
+    border: 4px solid #00b894;
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.65);
+}
+.end{
+    background: #ee5253;
+    border-radius: 13px;
+    border: 4px solid #d63031;
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.65);
+}
+.detail:hover{
+    transform: scale(0.95);
+    transition: 0.3s;
 }
 @media only screen and (max-width: 768px){
     .test-bg, .questions-svg{
